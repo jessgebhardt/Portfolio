@@ -413,3 +413,33 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* Helles Theme */
+.light-theme {
+    background-color: #ffffff; /* Weiß */
+    color: #000000; /* Schwarz */
+}
+
+/* Dunkles Theme */
+.dark-theme {
+    background-color: #000000; /* Schwarz */
+    color: #ffffff; /* Weiß */
+}
+
+/* Stil nur für den Theme-Umschalter */
+.theme-toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid transparent; /* Standardrahmen */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f0f0f0; /* Standard Hintergrund */
+    color: #000; /* Standard Textfarbe */
+}
+
+/* Button Styles für dunkles Theme */
+.dark-theme .theme-toggle-button {
+    background-color: #444; /* Dunkler Hintergrund für den Button */
+    color: #fff; /* Helle Schriftfarbe */
+}
