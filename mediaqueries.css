@@ -1,5 +1,5 @@
 @media screen and (max-width: 1400px) {
-    #profile {
+    .profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
@@ -56,7 +56,7 @@
         height: 40vh;
     }
 
-    #profile {
+    .profile {
         height: 83vh;
         margin-bottom: 0;
     }
