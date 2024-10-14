@@ -46,3 +46,41 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+/* Typing/Blinking Animation */
+const phrases = ["Software Engineer", "Web Developer", "Frontend Engineer", "Creative Problem Solver"];
+const typedTextElement = document.getElementById("typed-text");
+const cursor = document.querySelector(".cursor");
+
+let currentPhraseIndex = 0;
+let currentCharIndex = 0;
+let isTyping = true;
+
+function type() {
+    if (isTyping) {
+        if (currentCharIndex < phrases[currentPhraseIndex].length) {
+            typedTextElement.textContent += phrases[currentPhraseIndex][currentCharIndex];
+            currentCharIndex++;
+            setTimeout(type, 100); // Typing speed
+        } else {
+            isTyping = false;
+            setTimeout(erase, 1500); // Wait before starting to erase
+        }
+    }
+}
+
+function erase() {
+    if (!isTyping) {
+        if (currentCharIndex > 0) {
+            typedTextElement.textContent = phrases[currentPhraseIndex].substring(0, currentCharIndex - 1);
+            currentCharIndex--;
+            setTimeout(erase, 100); // Erasing speed
+        } else {
+            isTyping = true;
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length; // Move to next phrase
+            setTimeout(type, 500); // Wait before starting to type next phrase
+        }
+    }
+}
+
+type();

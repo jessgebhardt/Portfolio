@@ -483,3 +483,20 @@ footer p {
     from {opacity: 0; transform: translateY(-20px);}
     to {opacity: 1; transform: translateY(0);}
 }
+
+/* Cursor Blinking Animation */
+.cursor {
+    display: inline-block;
+    width: 2.5px;
+    height: 1em;
+    background-color: rgb(85, 85, 85);
+    margin-left: 5px;
+    animation: blinking 0.8s infinite;
+}
+
+
+@keyframes blinking {
+    50% {
+        opacity: 0;
+    }
+}
