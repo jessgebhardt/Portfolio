@@ -26,24 +26,28 @@ sections.forEach(section => {
 });
 
 /* Modal */
-
-var modal = document.getElementById("creditsModal");
-
-var modalBtn = document.getElementById("openModal");
-
-var span = document.getElementsByClassName("close")[0];
-
-modalBtn.onclick = function() {
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
     modal.style.display = "block";
 }
 
-span.onclick = function() {
+function closeModal(modal) {
     modal.style.display = "none";
 }
 
+var closeButtons = document.getElementsByClassName("close");
+for (let i = 0; i < closeButtons.length; i++) {
+    closeButtons[i].onclick = function() {
+        closeModal(closeButtons[i].parentElement.parentElement);
+    }
+}
+
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    for (let i = 0; i < closeButtons.length; i++) {
+        var modal = closeButtons[i].parentElement.parentElement;
+        if (event.target == modal) {
+            closeModal(modal);
+        }
     }
 }
 

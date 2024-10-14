@@ -345,6 +345,7 @@ article .icon {
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .project-img {

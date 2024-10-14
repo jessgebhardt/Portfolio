@@ -191,19 +191,19 @@
             <h1 class="title">Projects</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
-                    <div class="details-container color-container">
+                    <div class="details-container color-container" onclick="openModal('cityModal')">
                         <div class="article-container">
                             <img src="./assets/City_Generator.png" alt="City Generator Project Picture" class="project-img">
                         </div>
                         <h2 class="experience-sub-title project-title">City Generator</h2>
                     </div>
-                    <div class="details-container color-container">
+                    <div class="details-container color-container" onclick="openModal('overworldModal')">
                         <div class="article-container">
                             <img src="./assets/Insel_mit_biomen.png" alt="Overworld Generator Project Picture" class="project-img">
                         </div>
                         <h2 class="experience-sub-title project-title">Overworld Generator</h2>
                     </div>
-                    <div class="details-container color-container">
+                    <div class="details-container color-container" onclick="openModal('dialougeModal')">
                         <div class="article-container">
                             <img src="./assets/Dialouge-forge2.png" alt="Dialouge Generator Project Picture" class="project-img">
                         </div>
@@ -235,14 +235,38 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><button id="openModal" class="modal-button">Credits</button></li>
+                        <li><button class="modal-button" onclick="openModal('creditsModal')">Credits</button></li>
                     </ul>
                 </div>
             </nav>
             <p>Copyright &#169; 2024 Jessica Gebhardt. All Rights Reserved.</p>
         </footer>
 
-        <!-- Modal -->
+        <!-- Modals -->
+        <div id="cityModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>City Generator:</h2>
+                <p>Infos...</p>
+            </div>
+        </div>
+
+        <div id="overworldModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Overworld Generator:</h2>
+                <p>Infos...</p>
+            </div>
+        </div>
+
+        <div id="dialougeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Dialouge Generator:</h2>
+                <p>Infos...</p>
+            </div>
+        </div>
+
         <div id="creditsModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
