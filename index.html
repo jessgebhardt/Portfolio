@@ -205,7 +205,7 @@
                     </div>
                     <div class="details-container color-container" onclick="openModal('dialougeModal')">
                         <div class="article-container">
-                            <img src="./assets/pictures/Dialouge-forge2.png" alt="Dialouge Generator Project Picture" class="project-img">
+                            <img src="./assets/pictures/Dialouge-forge.png" alt="Dialouge Generator Project Picture" class="project-img">
                         </div>
                         <h2 class="experience-sub-title project-title">Dialouge Generator</h2>
                     </div>
@@ -245,33 +245,80 @@
         <!-- Modals -->
         <div id="cityModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>City Generator:</h2>
-                <p>Infos...</p>
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>City Generator:</h2>
+                    <p class="modal-sub">C# and Unity</p>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./assets/pictures/City_Panorama.png" alt="City Generator Project Picture" class="modal-img">
+                </div>
+                <p class="modal__text__p">
+                    This project was part of my bachelorthesis. It developed an approach to automatically create urban areas for video games and other applications using procedural content generation. Various algorithms and techniques were used to customize and optimize the generated city models.
+                </p>
+                <p class="modal__text__p">
+                    Poisson disk sampling is used to determine optimal locations for a specified number of city districts when creating a city. A weighted suitability calculation then assigns each district its appropriate location.<br>
+                    To delineate the boundaries of the districts, I used a modified Voronoi diagram, which also represents the primary streets of the city. Next, secondary roads can be generated using an L-system, adding complexity and realism to the road network. Finally, parcels of land get divided and buildings are automatically placed within those parcels.<br>
+                    All aspects of the city generation process are easily customizable through the Unity Inspector, allowing for different results with each generation.
+                </p>
+                <div class="modal-img-container">
+                    <button class="btn btn-color-2" style="height: fit-content;" onclick="window.open('https://github.com/jessgebhardt/Bachelorthesis', '_blank')">
+                        Github Code
+                    </button>
+                </div>
             </div>
         </div>
 
         <div id="overworldModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Overworld Generator:</h2>
-                <p>Infos...</p>
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Overworld Generator:</h2>
+                    <p class="modal-sub">C# and Unity</p>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./assets/pictures/Craftorio_Gameplay.png" alt="Gameplay Picture" class="modal-img">
+                </div>
+                <p class="modal__text__p">
+                    This overworld generator was developed as part of a university group project focused on creating a 2D survival game. My primary responsibility was designing and implementing the overworld generation system.
+                </p>
+                <p class="modal__text__p" style="padding-top: 0;">
+                    This system generates a group of islands using Perlin noise, which creates realistic terrain features. To define the biomes, I applied two layers of Perlin noise: one for temperature and another for moisture values across the map. Vegetation, including trees and bushes, is placed on the islands using a Wave Function Collapse algorithm. Cave entrances and biome-specific resources are strategically positioned using Poisson disk sampling, ensuring a natural distribution. Additionally, random roads are generated to enhance exploration within the game world. The overall design was inspired by the game <i>Don't Starve</i>.
+                </p>
+                <div class="modal-img-container more-imgs">
+                    <img src="./assets/pictures/Insel_mit_biomen.png" alt="Overworld Picture" class="modal-img">
+                    <img src="./assets/pictures/Biomgeneration.png" alt="Temperatur Perlin Noise Picture" class="modal-img">
+                </div>
             </div>
         </div>
 
         <div id="dialougeModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Dialouge Generator:</h2>
-                <p>Infos...</p>
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Dialouge Generator:</h2>
+                    <p class="modal-sub">JavaScript, Vue.js, HTML and CSS</p>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./assets/pictures/Dialouge-forge-home.png" alt="Dialogue Generator Homepage Picture" class="modal-img">
+                </div>
+                <p class="modal__text__p">
+                    Dialogue Forge is a web application developed as part of a university group project that uses AI to generate dialogue for movies, games, and other media. I worked primarily on the frontend, contributing to the design and implementation of a user-friendly interface. This interface enables users to create and edit dialogues and personas, as well as generate dialogues. My focus was on ensuring that these features were intuitive and easy to use, enhancing the overall user experience.
+                </p>
+                <div class="modal-img-container more-imgs">
+                    <img src="./assets/pictures/Dialouge-forge-edit.png" alt="Dialogue Edit Picture" class="modal-img">
+                    <img src="./assets/pictures/Dialouge-forge-persona.png" alt="Persona Picture" class="modal-img">
+                </div>
             </div>
         </div>
 
-        <div id="creditsModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Credits:</h2>
-                <p>Favicon "Circled J" by <a target="_blank" href="https://icons8.com/icon/66739/circled-j">Icons8</a></p>
+        <div id="creditsModal" class="credits-modal">
+            <div class="credits-modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Credits:</h2>
+                </div>
+                <p class="modal__text__p2">Favicon "Circled J" by <a target="_blank" href="https://icons8.com/icon/66739/circled-j">Icons8</a></p>
             </div>
         </div>
 

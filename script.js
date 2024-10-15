@@ -32,20 +32,23 @@ function openModal(modalId) {
 }
 
 function closeModal(modal) {
-    modal.style.display = "none";
+    if (modal) {
+        modal.style.display = "none";
+    }
 }
 
 var closeButtons = document.getElementsByClassName("close");
 for (let i = 0; i < closeButtons.length; i++) {
     closeButtons[i].onclick = function() {
-        closeModal(closeButtons[i].parentElement.parentElement);
-    }
+        var modal = closeButtons[i].closest('.modal') || closeButtons[i].closest('.credits-modal');
+        closeModal(modal);
+    };
 }
 
 window.onclick = function(event) {
     for (let i = 0; i < closeButtons.length; i++) {
-        var modal = closeButtons[i].parentElement.parentElement;
-        if (event.target == modal) {
+        var modal = closeButtons[i].closest('.modal') || closeButtons[i].closest('.credits-modal');
+        if (event.target === modal) {
             closeModal(modal);
         }
     }
