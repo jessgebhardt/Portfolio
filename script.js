@@ -29,11 +29,13 @@ sections.forEach(section => {
 function openModal(modalId) {
     var modal = document.getElementById(modalId);
     modal.style.display = "block";
+    document.body.classList.add("no-scroll");
 }
 
 function closeModal(modal) {
     if (modal) {
         modal.style.display = "none";
+        document.body.classList.remove("no-scroll");
     }
 }
 

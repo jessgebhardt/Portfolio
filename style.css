@@ -549,6 +549,10 @@ footer p {
     flex-wrap: wrap;
 }
 
+.no-scroll {
+    overflow: hidden; /* Prevents scrolling */
+}
+
 /* Cursor Blinking Animation */
 .cursor {
     display: inline-block;
