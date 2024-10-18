@@ -11,14 +11,15 @@
     </head>
     <body>
         <div id="home">
+            <button id="languageToggle">German</button>
             <nav id="desktop-nav">
-                <div class="logo">Jessica</div>
+                <div class="logo">Jessica</div>                
                 <div>
                     <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a id="aboutNavDesktop" href="#about"></a></li>
+                        <li><a id="experienceNavDesktop" href="#experience"></a></li>
+                        <li><a id="projectsNavDesktop" href="#projects"></a></li>
+                        <li><a id="contactNavDesktop" href="#contact"></a></li>
                     </ul>
                 </div>
             </nav>
@@ -31,10 +32,10 @@
                         <span></span>
                     </div>
                     <div class="menu-links">
-                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                        <li><a id="aboutNavHamburger" href="#about" onclick="toggleMenu()"></a></li>
+                        <li><a id="experienceNavHamburger" href="#experience" onclick="toggleMenu()"></a></li>
+                        <li><a id="projectsNavHamburger" href="#projects" onclick="toggleMenu()"></a></li>
+                        <li><a id="contactNavHamburger" href="#contact" onclick="toggleMenu()"></a></li>
                     </div>
                 </div>
             </nav>
@@ -42,14 +43,10 @@
         <section class="profile">
             <div class="section__text">
                 <h2 class="title">Jessica Gebhardt</h2>
-                <p class="section__text__p2">I'm a <span id="typed-text"></span><span class="cursor"></span></p>
+                <p class="section__text__p2"><span id="myTitles"></span> <span id="typed-text"></span><span class="cursor"></span></p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/files/Lebenslauf Jessica Gebhardt.pdf')">
-                        Download CV
-                    </button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                        Contact Me
-                    </button>
+                    <button id="cvBtn" class="btn btn-color-2" onclick="window.open('./assets/files/Lebenslauf Jessica Gebhardt.pdf')"></button>
+                    <button id="contactBtn" class="btn btn-color-1" onclick="location.href='./#contact'"></button>
                 </div>
                 <div id="socials-container">
                     <img src="./assets/icons/linkedin.png" alt="Linkedin profile" class="icon" onclick="window.open('https://www.linkedin.com/in/jessica-gebhardt-078b46332', '_blank')">
@@ -58,36 +55,32 @@
             </div>
         </section>
         <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
+            <p id="aboutTxt1" class="section__text__p1"></p>
+            <h1 id="aboutTitle" class="title"></h1>
             <div class="section-container">
                 <div class="about-details-container">
                     <div class="about-containers">
                         <div class="details-container">
                             <img src="./assets/icons/experience.png" alt="Experience icon" class="icon">
-                            <h3>Experience</h3>
-                            <p>1.5 years <br/>Frontend Development</p>
+                            <h3 id="aboutTitle1"></h3>
+                            <p id="aboutTxt2"></p>
                         </div>
                         <div class="details-container">
                             <img src="./assets/icons/education.png" alt="Education icon" class="icon">
-                            <h3>Education</h3>
+                            <h3 id="aboutTitle2"></h3>
                             <p>B.Sc. Software Engineering</p>
                         </div>
                     </div>
                     <div class="text-container">
-                        <p style="text-align: left;">
-                            I'm passionate about exploring different areas of software development, with a special love for web and game development. The blend of creativity, logic, and technology drives my passion for building meaningful solutions.<br>
-                            As I near the completion of my Bachelor's degree in Software Engineering, I've gained strong experience using JavaScript, C#, and Unity in academic projects. I also have 1.5 years of professional experience as a Web Developer, where I mostly worked with JavaScript, Vue.js, HTML, CSS, and MongoDB.<br>
-                            I'm always eager to learn and excited to continue growing as a developer.
-                        </p>
+                        <p id="aboutTxt3" style="text-align: left;"></p>
                     </div>
                 </div>
             </div>
             <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
         </section>
         <section id="experience">
-            <p class="section__text__p1">Explore My</p>
-            <h1 class="title">Experience</h1>
+            <p id="expTxt1" class="section__text__p1"></p>
+            <h1 id="expTitle" class="title"></h1>
             <div class="experience-details-container">
                 <div class="about-containers">
                     <div class="details-container">
@@ -187,35 +180,35 @@
             <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
         </section>
         <section id="projects">
-            <p class="section__text__p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
+            <p id="projectsTxt" class="section__text__p1"></p>
+            <h1 id="projectsTitle" class="title"></h1>
             <div class="experience-details-container">
                 <div class="about-containers">
                     <div class="details-container color-container" onclick="openModal('cityModal')">
                         <div class="article-container">
                             <img src="./assets/pictures/City_Generator.png" alt="City Generator Project Picture" class="project-img">
                         </div>
-                        <h2 class="experience-sub-title project-title">City Generator</h2>
+                        <h2 id="projectsTitle1" class="experience-sub-title project-title"></h2>
                     </div>
                     <div class="details-container color-container" onclick="openModal('overworldModal')">
                         <div class="article-container">
                             <img src="./assets/pictures/Insel_mit_biomen.png" alt="Overworld Generator Project Picture" class="project-img">
                         </div>
-                        <h2 class="experience-sub-title project-title">Overworld Generator</h2>
+                        <h2 id="projectsTitle2" class="experience-sub-title project-title"></h2>
                     </div>
                     <div class="details-container color-container" onclick="openModal('dialougeModal')">
                         <div class="article-container">
                             <img src="./assets/pictures/Dialouge-forge.png" alt="Dialouge Generator Project Picture" class="project-img">
                         </div>
-                        <h2 class="experience-sub-title project-title">Dialouge Generator</h2>
+                        <h2 id="projectsTitle3" class="experience-sub-title project-title"></h2>
                     </div>
                 </div>
             </div>
             <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
         </section>
         <section id="contact">
-            <p class="section__text__p1">Get In Touch</p>
-            <h1 class="title">Contact Me</h1>
+            <p id="contactTxt1" class="section__text__p1"></p>
+            <h1 id="contactTitle" class="title"></h1>
             <div class="contact-info-upper-container">
                 <div class="contact-info-container">
                     <img src="./assets/icons/email.png" alt="Email icon" class="icon contact-icon email-icon">
@@ -231,15 +224,15 @@
             <nav>
                 <div class="nav-links-container">
                     <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><button class="modal-button" onclick="openModal('creditsModal')">Credits</button></li>
+                        <li><a id="aboutNav" href="#home">Home</a></li>
+                        <li><a id="experienceNav" href="#about">About</a></li>
+                        <li><a id="projectsNav" href="#experience">Experience</a></li>
+                        <li><a id="contactNav" href="#projects">Projects</a></li>
+                        <li><button id="creditsBtn" class="modal-button" onclick="openModal('creditsModal')"></button></li>
                     </ul>
                 </div>
             </nav>
-            <p>Copyright &#169; 2024 Jessica Gebhardt. All Rights Reserved.</p>
+            <p id="copyright"></p>
         </footer>
 
         <!-- Modals -->
@@ -247,20 +240,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2>City Generator:</h2>
-                    <p class="modal-sub">C# and Unity</p>
+                    <h2 id="projectsTitle4"></h2>
+                    <p class="modal-sub">C#, Unity</p>
                 </div>
                 <div class="modal-img-container">
                     <img src="./assets/pictures/City_Panorama.png" alt="City Generator Project Picture" class="modal-img">
                 </div>
-                <p class="modal__text__p">
-                    This project was part of my bachelorthesis. It developed an approach to automatically create urban areas for video games and other applications using procedural content generation. Various algorithms and techniques were used to customize and optimize the generated city models.
-                </p>
-                <p class="modal__text__p" style="padding-top: 0;">
-                    Poisson disk sampling is used to determine optimal locations for a specified number of city districts when creating a city. A weighted suitability calculation then assigns each district its appropriate location.<br>
-                    To delineate the boundaries of the districts, I used a modified Voronoi diagram, which also represents the primary streets of the city. Next, secondary roads can be generated using an L-system, adding complexity and realism to the road network. Finally, parcels of land get divided and buildings are automatically placed within those parcels.<br>
-                    All aspects of the city generation process are easily customizable through the Unity Inspector, allowing for different results with each generation.
-                </p>
+                <p id="projectsTxt1" class="modal__text__p"></p>
+                <p id="projectsTxt2" class="modal__text__p" style="padding-top: 0;"></p>
                 <div class="modal-img-container more-imgs" style="padding-bottom: 20px;">
                     <img src="./assets/pictures/DistortedVoronoi.png" alt="Modified Voronoi Picture" class="modal-img">
                     <img src="./assets/pictures/City_Roads.png" alt="City Roads Picture" class="modal-img">
@@ -277,18 +264,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2>Overworld Generator:</h2>
-                    <p class="modal-sub">C# and Unity</p>
+                    <h2 id="projectsTitle5"></h2>
+                    <p class="modal-sub">C#, Unity</p>
                 </div>
                 <div class="modal-img-container">
                     <img src="./assets/pictures/Craftorio_Gameplay.png" alt="Gameplay Picture" class="modal-img">
                 </div>
-                <p class="modal__text__p">
-                    This overworld generator was developed as part of a university group project focused on creating a 2D survival game. My primary responsibility was designing and implementing the overworld generation system.
-                </p>
-                <p class="modal__text__p" style="padding-top: 0;">
-                    This system generates a group of islands using Perlin noise, which creates realistic terrain features. To define the biomes, I applied two layers of Perlin noise: one for temperature and another for moisture values across the map. Vegetation, including trees and bushes, is placed on the islands using a Wave Function Collapse algorithm. Cave entrances and biome-specific resources are strategically positioned using Poisson disk sampling, ensuring a natural distribution. Additionally, random roads are generated to enhance exploration within the game world. The overall design was inspired by the game <i>Don't Starve</i>.
-                </p>
+                <p id="projectsTxt3" class="modal__text__p"></p>
+                <p id="projectsTxt4" class="modal__text__p" style="padding-top: 0;"></p>
                 <div class="modal-img-container more-imgs">
                     <img src="./assets/pictures/Insel_mit_biomen.png" alt="Overworld Picture" class="modal-img">
                     <img src="./assets/pictures/Biomgeneration.png" alt="Temperatur Perlin Noise Picture" class="modal-img">
@@ -300,15 +283,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2>Dialouge Generator:</h2>
-                    <p class="modal-sub">JavaScript, Vue.js, HTML and CSS</p>
+                    <h2 id="projectsTitle6"></h2>
+                    <p class="modal-sub">JavaScript, Vue.js, HTML, CSS</p>
                 </div>
                 <div class="modal-img-container">
                     <img src="./assets/pictures/Dialouge-forge-home.png" alt="Dialogue Generator Homepage Picture" class="modal-img">
                 </div>
-                <p class="modal__text__p">
-                    Dialogue Forge is a web application developed as part of a university group project that uses AI to generate dialogue for movies, games, and other media. I worked primarily on the frontend, contributing to the design and implementation of a user-friendly interface. This interface enables users to create and edit dialogues and personas, as well as generate dialogues. My focus was on ensuring that these features were intuitive and easy to use, enhancing the overall user experience.
-                </p>
+                <p id="projectsTxt5" class="modal__text__p"></p>
                 <div class="modal-img-container more-imgs">
                     <img src="./assets/pictures/Dialouge-forge-edit.png" alt="Dialogue Edit Picture" class="modal-img">
                     <img src="./assets/pictures/Dialouge-forge-persona.png" alt="Persona Picture" class="modal-img">
@@ -320,7 +301,7 @@
             <div class="credits-modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2>Credits:</h2>
+                    <h2 id="creditsTitle"></h2>
                 </div>
                 <p class="modal__text__p2">Favicon "Circled J" by <a target="_blank" href="https://icons8.com/icon/66739/circled-j">Icons8</a></p>
             </div>
