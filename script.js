@@ -57,7 +57,7 @@ window.onclick = function(event) {
 }
 
 /* Typing/Blinking Animation */
-var phrases = ["Software Engineer", "Web Developer", "Frontend Engineer", "Creative Problem Solver"];
+var phrases = ["Software Engineer", "Web Developer", "Frontend Engineer", "Creative Problem Solver", "Cat Mom"];
 const typedTextElement = document.getElementById("typed-text");
 const cursor = document.querySelector(".cursor");
 
@@ -138,7 +138,7 @@ const content = {
         copyright: "Copyright &#169; 2024 Jessica Gebhardt. All Rights Reserved.",
     },
     de: {
-        phrases: ["Software-Ingenieurin", "Webentwicklerin", "Frontend-Ingenieurin", "Kreative Problemlöserin"],
+        phrases: ["Software-Ingenieurin", "Webentwicklerin", "Frontend-Ingenieurin", "kreative Problemlöserin"],
 
         homeNav: "Home",
         aboutNav: "Über mich",
