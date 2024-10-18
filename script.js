@@ -246,3 +246,28 @@ document.getElementById('languageToggle').addEventListener('click', () => {
 
 // Set initial language
 setLanguage(currentLanguage);
+
+/* Theme Toggle */
+const themeToggleButton = document.getElementById('themeToggle');
+let isDarkMode = false;
+
+// still needs testing
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-theme');
+    themeToggleButton.textContent = '🌜';
+    isDarkMode = true;
+}
+
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    
+    if (isDarkMode) {
+        themeToggleButton.textContent = '🌞';
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeToggleButton.textContent = '🌜';
+        localStorage.setItem('theme', 'dark');
+    }
+    
+    isDarkMode = !isDarkMode;
+});
