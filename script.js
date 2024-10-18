@@ -100,8 +100,9 @@ const content = {
     en: {
         phrases: ["Software Engineer", "Web Developer", "Frontend Engineer", "Creative Problem Solver"],
 
+        homeNav: "Home",
         aboutNav: "About",
-        experienceNav: "Experience",
+        skillNav: "Skills",
         projectsNav: "Projects",
         contactNav: "Contact",
 
@@ -139,8 +140,9 @@ const content = {
     de: {
         phrases: ["Software-Ingenieurin", "Webentwicklerin", "Frontend-Ingenieurin", "Kreative Problemlöserin"],
 
+        homeNav: "Home",
         aboutNav: "Über mich",
-        experienceNav: "Erfahrung",
+        skillNav: "Fähigkeiten",
         projectsNav: "Projekte",
         contactNav: "Kontakt",
 
@@ -188,8 +190,8 @@ const setLanguage = (language) => {
 
     document.getElementById('aboutNavDesktop').innerText = content[language].aboutNav;
     document.getElementById('aboutNavHamburger').innerText = content[language].aboutNav;
-    document.getElementById('experienceNavDesktop').innerText = content[language].experienceNav;
-    document.getElementById('experienceNavHamburger').innerText = content[language].experienceNav;
+    document.getElementById('skillNavDesktop').innerText = content[language].skillNav;
+    document.getElementById('skillNavHamburger').innerText = content[language].skillNav;
     document.getElementById('projectsNavDesktop').innerText = content[language].projectsNav;
     document.getElementById('projectsNavHamburger').innerText = content[language].projectsNav;
     document.getElementById('contactNavDesktop').innerText = content[language].contactNav;
@@ -206,8 +208,8 @@ const setLanguage = (language) => {
     document.getElementById('aboutTxt3').innerHTML = content[language].aboutTxt3;
 
     document.getElementById('expTxt1').innerText = content[language].expTxt1;
-    document.getElementById('expTitle').innerText = content[language].experienceNav;
-    // document.getElementById('expTitle').innerText = content[language].experienceNav; Intermediate und so
+    document.getElementById('expTitle').innerText = content[language].skillNav;
+    // document.getElementById('expTitle').innerText = content[language].skillNav; Intermediate und so
 
     document.getElementById('projectsTxt').innerText = content[language].projectsTxt;
     document.getElementById('projectsTitle').innerText = content[language].projectsNav;
@@ -229,10 +231,10 @@ const setLanguage = (language) => {
     document.getElementById('creditsBtn').innerText = content[language].creditsBtn;
     document.getElementById('creditsTitle').innerText = content[language].creditsBtn + ":";
 
+    document.getElementById('homeNav').innerText = content[language].homeNav;
     document.getElementById('aboutNav').innerText = content[language].aboutNav;
-    document.getElementById('experienceNav').innerText = content[language].experienceNav;
+    document.getElementById('skillNav').innerText = content[language].skillNav;
     document.getElementById('projectsNav').innerText = content[language].projectsNav;
-    document.getElementById('contactNav').innerText = content[language].contactNav;
 
     document.getElementById('copyright').innerHTML = content[language].copyright;
 };
