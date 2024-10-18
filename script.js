@@ -180,7 +180,7 @@ const content = {
 let currentLanguage = 'en';
 const userLang = navigator.language || navigator.userLanguage;
 currentLanguage = userLang.startsWith('de') ? 'de' : 'en';
-document.getElementById('languageToggle').innerText = currentLanguage === 'en' ? 'German' : 'English';
+document.getElementById('languageToggle').innerText = currentLanguage === 'en' ? 'DE' : 'EN';
 
 const setLanguage = (language) => {
     document.getElementById('myTitles').textContent = content[language].myTitles;
@@ -240,7 +240,7 @@ const setLanguage = (language) => {
 document.getElementById('languageToggle').addEventListener('click', () => {
     currentLanguage = currentLanguage === 'en' ? 'de' : 'en';
     setLanguage(currentLanguage);
-    document.getElementById('languageToggle').innerText = currentLanguage === 'en' ? 'German' : 'English';
+    document.getElementById('languageToggle').innerText = currentLanguage === 'en' ? 'DE' : 'EN';
     type();
 });
 

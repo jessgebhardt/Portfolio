@@ -25,6 +25,16 @@ a, .btn {
     transition: all 300ms ease;
 }
 
+/* Home */
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+    padding: 0px 5rem;
+}
+
 /* Desktop Nav */
 
 nav, .nav-links {
@@ -479,7 +489,7 @@ footer p {
 }
 
 /* Button Style For Modal Trigger */
-.modal-button {
+.modal-button, .lang-button {
     background: none;
     border: none;
     color: black;
@@ -490,7 +500,7 @@ footer p {
     text-decoration-color: white;
 }
 
-.modal-button:hover {
+.modal-button:hover, .lang-button:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
