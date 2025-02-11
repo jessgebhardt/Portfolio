@@ -253,7 +253,6 @@ setLanguage(currentLanguage);
 const themeToggleButton = document.getElementById('themeToggle');
 let isDarkMode = false;
 
-// still needs testing
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-theme');
     themeToggleButton.textContent = '🌜';
