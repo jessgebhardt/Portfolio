@@ -122,7 +122,7 @@ const content = {
         projectsTxt: "Browse My Recent",
         projectsTitle1: "City Generator",
         projectsTitle2: "Overworld Generator",
-        projectsTitle3: "Dialouge Generator",
+        projectsTitle3: "Dialogue Generator",
         projectsTxt1: "This project was part of my bachelorthesis. It developed an approach to automatically create urban areas for video games and other applications using procedural content generation. Various algorithms and techniques were used to customize and optimize the generated city models.",
         projectsTxt2: "Poisson disk sampling is used to determine optimal locations for a specified number of city districts when creating a city. A weighted suitability calculation then assigns each district its appropriate location.<br/> To delineate the boundaries of the districts, I used a modified Voronoi diagram, which also represents the primary streets of the city. Next, secondary roads can be generated using an L-system, adding complexity and realism to the road network. Finally, parcels of land get divided and buildings are automatically placed within those parcels.<br/> All aspects of the city generation process are easily customizable through the Unity Inspector, allowing for different results with each generation.",
 
