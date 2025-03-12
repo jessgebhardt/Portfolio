@@ -96,6 +96,8 @@ type();
 
 /* Languages */
 
+const currentYear = new Date().getFullYear();
+
 const content = {
     en: {
         phrases: ["Software Engineer", "Web Developer", "Frontend Engineer", "Creative Problem Solver"],
@@ -136,7 +138,7 @@ const content = {
 
         creditsBtn: "Credits",
 
-        copyright: "Copyright &#169; 2024 Jessica Gebhardt. All Rights Reserved.",
+        copyright: `Copyright &#169; ${currentYear} Jessica Gebhardt. All Rights Reserved.`,
     },
     de: {
         phrases: ["Software-Ingenieurin", "Webentwicklerin", "Frontend-Ingenieurin", "kreative Problemlöserin"],
@@ -177,7 +179,7 @@ const content = {
 
         creditsBtn: "Impressum",
 
-        copyright: "Urheberrecht &#169; 2024 Jessica Gebhardt. Alle Rechte vorbehalten."
+        copyright: `Urheberrecht &#169; ${currentYear} Jessica Gebhardt. Alle Rechte vorbehalten.`
     }
 };
 
