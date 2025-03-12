@@ -117,7 +117,7 @@ const content = {
         aboutTitle1: "Experience",
         aboutTitle2: "Education",
         aboutTxt2: "1.5 years <br/>Frontend Development",
-        aboutTxt3: "I'm passionate about exploring different areas of software development, with a special love for web and game development. The blend of creativity, logic, and technology drives my passion for building meaningful solutions.<br/> As I near the completion of my Bachelor's degree in Software Engineering, I've gained strong experience using JavaScript, C#, and Unity in academic projects. I also have 1.5 years of professional experience as a Web Developer, where I mostly worked with JavaScript, Vue.js, HTML, CSS, and MongoDB.<br/> I'm always eager to learn and excited to continue growing as a developer.",
+        aboutTxt3: "I'm passionate about exploring different areas of software development, with a special love for web and game development. The blend of creativity, logic, and technology drives my passion for building meaningful solutions.<br/> During my Bachelor's degree in Software Engineering, I've gained strong experience using JavaScript, C#, and Unity in academic projects. I also have 1.5 years of professional experience as a Web Developer, where I mostly worked with JavaScript, Vue.js, HTML, CSS, and MongoDB.<br/> I'm always eager to learn and excited to continue growing as a developer.",
         aboutTxt4: "Final grade: 1,7",
 
         expTxt1: "Explore My",
@@ -158,7 +158,7 @@ const content = {
         aboutTitle1: "Berufserfahrung",
         aboutTitle2: "Bildung",
         aboutTxt2: "1,5 Jahre <br/>Frontend-Entwicklung",
-        aboutTxt3: "Ich erforsche leidenschaftlich gerne verschiedene Bereiche der Softwareentwicklung, mit einer besonderen Vorliebe für Web- und Spieleentwicklung. Die Mischung aus Kreativität, Logik und Technologie treibt meine Leidenschaft für die Entwicklung sinnvoller Lösungen an.<br/> Da ich kurz vor dem Abschluss meines Bachelorstudiums in Software Engineering stehe, habe ich in akademischen Projekten viel Erfahrung mit JavaScript, C# und Unity gesammelt. Ich habe auch 1,5 Jahre Berufserfahrung als Webentwicklerin, wo ich hauptsächlich mit JavaScript, Vue.js, HTML, CSS und MongoDB gearbeitet habe.<br/> Ich bin immer wissbegierig und freue mich darauf, als Entwicklerin weiter zu wachsen.",
+        aboutTxt3: "Ich erforsche leidenschaftlich gerne verschiedene Bereiche der Softwareentwicklung, mit einer besonderen Vorliebe für Web- und Spieleentwicklung. Die Mischung aus Kreativität, Logik und Technologie treibt meine Leidenschaft für die Entwicklung sinnvoller Lösungen an.<br/> Während meines Bachelorstudiums in Software Engineering, habe ich in akademischen Projekten viel Erfahrung mit JavaScript, C# und Unity gesammelt. Ich habe auch 1,5 Jahre Berufserfahrung als Webentwicklerin, wo ich hauptsächlich mit JavaScript, Vue.js, HTML, CSS und MongoDB gearbeitet habe.<br/> Ich bin immer wissbegierig und freue mich darauf, als Entwicklerin weiter zu wachsen.",
         aboutTxt4: "Abschlussnote: 1,7",
 
         expTxt1: "Erkunden Sie Meine",
