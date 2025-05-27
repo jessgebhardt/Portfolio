@@ -36,6 +36,16 @@ function closeModal(modal) {
     if (modal) {
         modal.style.display = "none";
         document.body.classList.remove("no-scroll");
+
+        // YouTube iframe stoppen
+        const iframes = modal.querySelectorAll("iframe");
+        iframes.forEach((iframe) => {
+            if (iframe.src.includes("youtube.com/embed")) {
+                const currentSrc = iframe.src;
+                iframe.src = "";
+                iframe.src = currentSrc;
+            }
+        });
     }
 }
 
