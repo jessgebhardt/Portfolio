@@ -126,13 +126,24 @@ const content = {
         projectsTitle1: "City Generator",
         projectsTitle2: "Overworld Generator",
         projectsTitle3: "Dialogue Generator",
-        projectsTxt1: "This project was part of my bachelorthesis. It developed an approach to automatically create urban areas for video games and other applications using procedural content generation. Various algorithms and techniques were used to customize and optimize the generated city models.",
-        projectsTxt2: "Poisson disk sampling is used to determine optimal locations for a specified number of city districts when creating a city. A weighted suitability calculation then assigns each district its appropriate location.<br/> To delineate the boundaries of the districts, I used a modified Voronoi diagram, which also represents the primary streets of the city. Next, secondary roads can be generated using an L-system, adding complexity and realism to the road network. Finally, parcels of land get divided and buildings are automatically placed within those parcels.<br/> All aspects of the city generation process are easily customizable through the Unity Inspector, allowing for different results with each generation.",
+        projectsTitle4: "FPS Game",
+        projectsTitle5: "Catnoid Game",
+        projectsTxtCity1: "This project was part of my bachelorthesis. It developed an approach to automatically create urban areas for video games and other applications using procedural content generation. Various algorithms and techniques were used to customize and optimize the generated city models.",
+        projectsTxtCity2: "Poisson disk sampling is used to determine optimal locations for a specified number of city districts when creating a city. A weighted suitability calculation then assigns each district its appropriate location.<br/> To delineate the boundaries of the districts, I used a modified Voronoi diagram, which also represents the primary streets of the city. Next, secondary roads can be generated using an L-system, adding complexity and realism to the road network. Finally, parcels of land get divided and buildings are automatically placed within those parcels.<br/> All aspects of the city generation process are easily customizable through the Unity Inspector, allowing for different results with each generation.",
 
-        projectsTxt3: "This overworld generator was developed as part of a university group project focused on creating a 2D survival game. My primary responsibility was designing and implementing the overworld generation system.",
-        projectsTxt4: "This system generates a group of islands using Perlin noise, which creates realistic terrain features. To define the biomes, I applied two layers of Perlin noise: one for temperature and another for moisture values across the map. Vegetation, including trees and bushes, is placed on the islands using a Wave Function Collapse algorithm. Cave entrances are strategically placed using Poisson disk sampling to ensure a natural distribution, and biome-specific resources are also randomly placed. Additionally, random roads are generated to enhance exploration within the game world. The overall design was inspired by the game <i>Don't Starve</i>.",
+        projectsTxtWorld1: "This overworld generator was developed as part of a university group project focused on creating a 2D survival game. My primary responsibility was designing and implementing the overworld generation system.",
+        projectsTxtWorld2: "This system generates a group of islands using Perlin noise, which creates realistic terrain features. To define the biomes, I applied two layers of Perlin noise: one for temperature and another for moisture values across the map. Vegetation, including trees and bushes, is placed on the islands using a Wave Function Collapse algorithm. Cave entrances are strategically placed using Poisson disk sampling to ensure a natural distribution, and biome-specific resources are also randomly placed. Additionally, random roads are generated to enhance exploration within the game world. The overall design was inspired by the game <i>Don't Starve</i>.",
 
-        projectsTxt5: "Dialogue Forge is a web application developed as part of a university group project that uses AI to generate dialogue for movies, games, and other media. I worked primarily on the frontend, contributing to the design and implementation of a user-friendly interface. This interface enables users to create and edit dialogues and personas, as well as generate dialogues. My focus was on ensuring that these features were intuitive and easy to use, enhancing the overall user experience.",
+        projectsTxtDialogue1: "Dialogue Forge is a web application developed as part of a university group project that uses AI to generate dialogue for movies, games, and other media. I worked primarily on the frontend, contributing to the design and implementation of a user-friendly interface. This interface enables users to create and edit dialogues and personas, as well as generate dialogues. My focus was on ensuring that these features were intuitive and easy to use, enhancing the overall user experience.",
+
+        projectsTxtFPS1: "This game was created as part of a university course. The task was to develop a first person shooter in which enemies are animated, can recognize, pursue and attack the player, but can also be injured and defeated in the process.",
+        projectsTxtFPS2: "I realized the enemies as soldiers. They don't move rigidly along a route, but head for certain points on the map one after the other and find their own way there. When they spot the player, they take up the chase. If they lose sight of him again, they reorient themselves and run back to the nearest target point to continue their patrol.",
+        projectsTxtFPS3: "The player can run, jump, climb, shoot and use a grappling hook to pull themselves up and hold on to walls. There is also a trampoline on the map that can be used to jump particularly high.",
+        projectsTxtFPS4: "I especially enjoyed the level design, I wanted to create an environment that was not only functional, but also visually interesting and varied.",
+
+        projectsTxtArkanoid1: "This game was one of the first projects I developed as part of a university course using Unity and C#. The task was to program a simple game in the style of Arkanoid and to implement certain requirements, for example a score and life display as well as collectable power-ups.",
+        projectsTxtArkanoid2: "Another feature was the use of different 'strong' blocks that cannot be destroyed with a single hit. Their resistance can be recognized by their color, which changes depending on the number of hits, so you can see directly how many times the ball still has to be hit to destroy the block.",
+        projectsTxtArkanoid3: "As I really enjoyed the development, I expanded the game beyond the mandatory requirements. Among other things, I added 'Game-Over' and 'You Won' screens, sound effects, a restart function and a playful cat theme.",
 
         contactTxt1: "Get In Touch",
 
@@ -167,13 +178,24 @@ const content = {
         projectsTitle1: "Stadt Generator",
         projectsTitle2: "2D Welt Generator",
         projectsTitle3: "Dialog Generator",
-        projectsTxt1: "Dieses Projekt war Teil meiner Bachelorthesis. Es wurde ein Ansatz zur automatischen Erstellung von Stadtgebieten für Videospiele und andere Anwendungen mit Hilfe von prozeduraler Inhaltsgenerierung entwickelt. Verschiedene Algorithmen und Techniken wurden verwendet, um die generierten Stadtmodelle anzupassen und zu optimieren.",
-        projectsTxt2: "Poisson Disk Sampling wird verwendet, um bei der Generierung einer Stadt optimale Standorte für eine bestimmte Anzahl von Stadtteilen zu ermitteln. Durch eine gewichtete Eignungsberechnung wird dann jedem Bezirk ein geeigneter Standort zugewiesen.<br/> Zur Abgrenzung der Stadtteile habe ich ein modifiziertes Voronoi-Diagramm verwendet. Die Grenzen stellen dabei auch die Hauptstraßen der Stadt dar. Anschließend können mit Hilfe eines L-Systems Nebenstraßen erzeugt werden, die das Straßennetz komplexer und realistischer machen. Schließlich werden die Grundstücke aufgeteilt und die Gebäude automatisch auf diesen Parzellen platziert.<br/> Alle Aspekte des Stadterzeugungsprozesses sind über den Unity Inspector leicht anpassbar, so dass bei jeder Generiernung andere Ergebnisse erzielt werden können.",
+        projectsTitle4: "FPS Spiel",
+        projectsTitle5: "Catnoid Spiel",
+        projectsTxtCity1: "Dieses Projekt war Teil meiner Bachelorthesis. Es wurde ein Ansatz zur automatischen Erstellung von Stadtgebieten für Videospiele und andere Anwendungen mit Hilfe von prozeduraler Inhaltsgenerierung entwickelt. Verschiedene Algorithmen und Techniken wurden verwendet, um die generierten Stadtmodelle anzupassen und zu optimieren.",
+        projectsTxtCity2: "Poisson Disk Sampling wird verwendet, um bei der Generierung einer Stadt optimale Standorte für eine bestimmte Anzahl von Stadtteilen zu ermitteln. Durch eine gewichtete Eignungsberechnung wird dann jedem Bezirk ein geeigneter Standort zugewiesen.<br/> Zur Abgrenzung der Stadtteile habe ich ein modifiziertes Voronoi-Diagramm verwendet. Die Grenzen stellen dabei auch die Hauptstraßen der Stadt dar. Anschließend können mit Hilfe eines L-Systems Nebenstraßen erzeugt werden, die das Straßennetz komplexer und realistischer machen. Schließlich werden die Grundstücke aufgeteilt und die Gebäude automatisch auf diesen Parzellen platziert.<br/> Alle Aspekte des Stadterzeugungsprozesses sind über den Unity Inspector leicht anpassbar, so dass bei jeder Generiernung andere Ergebnisse erzielt werden können.",
         
-        projectsTxt3: "Dieser Overworld-Generator wurde im Rahmen eines Gruppenprojekts an der Universität entwickelt, bei dem es um die Entwicklung eines 2D-Survival-Spiels ging. Meine Hauptaufgabe war das Design und die Implementierung des Overworld-Generatorsystems.",
-        projectsTxt4: "Dieses System erzeugt eine Gruppe von Inseln unter Verwendung von Perlin Noise. Um die Biome zu definieren, habe ich zwei Schichten von Perlin Noise überlagert: eine für die Temperatur und eine für die Feuchtigkeitswerte auf der Karte. Die Vegetation, einschließlich Bäumen und Sträuchern, wurde mit Hilfe eines Wave Function Collapse-Algorithmus auf den Inseln platziert. Höhleneingänge werden strategisch mittels Poisson disk sampling platziert, um eine natürliche Verteilung zu gewährleisten, und biome-spezifische Ressourcen werden ebenfalls zufällig platziert. Zusätzlich werden zufällige Straßen generiert, um die Erkundung der Spielwelt zu erleichtern. Das Gesamtdesign wurde von dem Spiel <i>Don't Starve</i> inspiriert.",
+        projectsTxtWorld1: "Dieser Overworld-Generator wurde im Rahmen eines Gruppenprojekts an der Universität entwickelt, bei dem es um die Entwicklung eines 2D-Survival-Spiels ging. Meine Hauptaufgabe war das Design und die Implementierung des Overworld-Generatorsystems.",
+        projectsTxtWorld2: "Dieses System erzeugt eine Gruppe von Inseln unter Verwendung von Perlin Noise. Um die Biome zu definieren, habe ich zwei Schichten von Perlin Noise überlagert: eine für die Temperatur und eine für die Feuchtigkeitswerte auf der Karte. Die Vegetation, einschließlich Bäumen und Sträuchern, wurde mit Hilfe eines Wave Function Collapse-Algorithmus auf den Inseln platziert. Höhleneingänge werden strategisch mittels Poisson disk sampling platziert, um eine natürliche Verteilung zu gewährleisten, und biome-spezifische Ressourcen werden ebenfalls zufällig platziert. Zusätzlich werden zufällige Straßen generiert, um die Erkundung der Spielwelt zu erleichtern. Das Gesamtdesign wurde von dem Spiel <i>Don't Starve</i> inspiriert.",
 
-        projectsTxt5: "Dialogue Forge ist eine Webanwendung, die im Rahmen eines gemeinschaftlichen Hochschulprojekts entwickelt wurde und KI nutzt, um Dialoge für Filme, Spiele und andere Medien zu generieren. Ich habe hauptsächlich am Frontend gearbeitet und an der Konzeption und Implementierung einer benutzerfreundlichen Oberfläche mitgewirkt. Diese Schnittstelle ermöglicht es Benutzern, Dialoge und Personas zu erstellen und zu bearbeiten sowie Dialoge zu generieren. Ich habe mich darauf konzentriert sicherzustellen, dass diese Funktionen intuitiv und einfach zu benutzen sind, um das Gesamterlebnis für die Nutzer*innen zu verbessern.",
+        projectsTxtDialogue1: "Dialogue Forge ist eine Webanwendung, die im Rahmen eines gemeinschaftlichen Hochschulprojekts entwickelt wurde und KI nutzt, um Dialoge für Filme, Spiele und andere Medien zu generieren. Ich habe hauptsächlich am Frontend gearbeitet und an der Konzeption und Implementierung einer benutzerfreundlichen Oberfläche mitgewirkt. Diese Schnittstelle ermöglicht es Benutzern, Dialoge und Personas zu erstellen und zu bearbeiten sowie Dialoge zu generieren. Ich habe mich darauf konzentriert sicherzustellen, dass diese Funktionen intuitiv und einfach zu benutzen sind, um das Gesamterlebnis für die Nutzer*innen zu verbessern.",
+
+        projectsTxtFPS1: "Dieses Spiel entstand im Rahmen eines Hochschulkurses. Die Aufgabe war, einen First Person Shooter zu entwickeln, in dem Gegner animiert sind, den Spieler erkennen, verfolgen und angreifen können, dabei aber auch selbst verletzt werden und besiegt werden können.",
+        projectsTxtFPS2: "Ich habe die Gegner als Soldaten umgesetzt. Sie bewegen sich nicht starr auf einer Route, sondern steuern nacheinander bestimmte Punkte auf der Karte an und suchen sich dabei eigenständig den Weg dorthin. Wenn sie den Spieler entdecken, nehmen sie die Verfolgung auf. Verlieren sie ihn wieder aus dem Blick, orientieren sie sich neu und laufen zum nächstgelegenen Zielpunkt zurück, um ihre Patrouille fortzusetzen.",
+        projectsTxtFPS3: "Der Spieler kann laufen, springen, klettern, schießen und sich mit einer Grappling Hook an Wände hochziehen und festhalten. Außerdem befindet sich ein Trampolin auf der Karte, mit dem man besonders hoch springen kann.",
+        projectsTxtFPS4: "Mir hat vor allem das Level-Design viel Spaß gemacht, ich wollte eine Umgebung schaffen, die nicht nur funktional, sondern auch visuell interessant ist.",
+
+        projectsTxtArkanoid1: "Dieses Spiel war eines der ersten Projekte, das ich im Rahmen eines Hochschulkurses mit Unity und C# entwickelt habe. Die Aufgabe bestand darin, ein einfaches Spiel im Stil von Arkanoid zu programmieren und dabei bestimmte Anforderungen umzusetzen, zum Beispiel eine Punkte- und Lebensanzeige sowie sammelbare Power-Ups.",
+        projectsTxtArkanoid2: "Ein weiteres Feature war der Einsatz von verschieden 'starken' Blöcken, die nicht mit einem einzigen Treffer zerstört werden können. Ihre Widerstandsfähigkeit erkennt man an der Farbe, je nach Trefferzahl ändert sich diese, sodass man direkt sehen kann, wie oft der Ball noch getroffen werden muss, um den Block zu zerstören.",
+        projectsTxtArkanoid3: "Da mir die Entwicklung großen Spaß gemacht hat, habe ich das Spiel über die Pflichtanforderungen hinaus erweitert. Ich habe unter anderem 'Game-Over'- und 'You Won'-Screens, Soundeffekte, eine Neustart-Funktion sowie ein verspieltes Katzen-Theme ergänzt.",
 
         contactTxt1: "Kontaktieren Sie Mich",
 
@@ -221,14 +243,25 @@ const setLanguage = (language) => {
     document.getElementById('projectsTitle1').innerText = content[language].projectsTitle1;
     document.getElementById('projectsTitle2').innerText = content[language].projectsTitle2;
     document.getElementById('projectsTitle3').innerText = content[language].projectsTitle3;
-    document.getElementById('projectsTitle4').innerText = content[language].projectsTitle1 + ":";
-    document.getElementById('projectsTitle5').innerText = content[language].projectsTitle2 + ":";
-    document.getElementById('projectsTitle6').innerText = content[language].projectsTitle3 + ":";
-    document.getElementById('projectsTxt1').innerText = content[language].projectsTxt1;
-    document.getElementById('projectsTxt2').innerHTML = content[language].projectsTxt2;
-    document.getElementById('projectsTxt3').innerText = content[language].projectsTxt3;
-    document.getElementById('projectsTxt4').innerHTML = content[language].projectsTxt4;
-    document.getElementById('projectsTxt5').innerText = content[language].projectsTxt5;
+    document.getElementById('projectsTitle4').innerText = content[language].projectsTitle4;
+    document.getElementById('projectsTitle5').innerText = content[language].projectsTitle5;
+    document.getElementById('projectsTitle10').innerText = content[language].projectsTitle1 + ":";
+    document.getElementById('projectsTitle20').innerText = content[language].projectsTitle2 + ":";
+    document.getElementById('projectsTitle30').innerText = content[language].projectsTitle3 + ":";
+    document.getElementById('projectsTitle40').innerText = content[language].projectsTitle4 + ":";
+    document.getElementById('projectsTitle50').innerText = content[language].projectsTitle5 + ":";
+    document.getElementById('projectsTxtCity1').innerText = content[language].projectsTxtCity1;
+    document.getElementById('projectsTxtCity2').innerHTML = content[language].projectsTxtCity2;
+    document.getElementById('projectsTxtWorld1').innerText = content[language].projectsTxtWorld1;
+    document.getElementById('projectsTxtWorld2').innerHTML = content[language].projectsTxtWorld2;
+    document.getElementById('projectsTxtDialogue1').innerText = content[language].projectsTxtDialogue1;
+    document.getElementById('projectsTxtFPS1').innerText = content[language].projectsTxtFPS1;
+    document.getElementById('projectsTxtFPS2').innerText = content[language].projectsTxtFPS2;
+    document.getElementById('projectsTxtFPS3').innerText = content[language].projectsTxtFPS3;
+    document.getElementById('projectsTxtFPS4').innerText = content[language].projectsTxtFPS4;
+    document.getElementById('projectsTxtArkanoid1').innerText = content[language].projectsTxtArkanoid1;
+    document.getElementById('projectsTxtArkanoid2').innerText = content[language].projectsTxtArkanoid2;
+    document.getElementById('projectsTxtArkanoid3').innerText = content[language].projectsTxtArkanoid3;
 
     document.getElementById('contactTxt1').innerText = content[language].contactTxt1;
     document.getElementById('contactTitle').innerText = content[language].contactNav;

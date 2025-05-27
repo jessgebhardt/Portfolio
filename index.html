@@ -202,6 +202,18 @@
                         </div>
                         <h2 id="projectsTitle3" class="skill-sub-title project-title"></h2>
                     </div>
+                    <div class="details-container color-container" onclick="openModal('shooterGameModal')">
+                        <div class="article-container" style="align-items: center;">
+                            <img src="./assets/pictures/FPS_World_Small.png" alt="First Person Shooter Game Project Picture" class="project-img">
+                        </div>
+                        <h2 id="projectsTitle4" class="skill-sub-title project-title"></h2>
+                    </div>
+                    <div class="details-container color-container" onclick="openModal('arkanoidModal')">
+                        <div class="article-container" style="align-items: center;">
+                            <img src="./assets/pictures/Arkanoid_Cat.png" alt="Arkanoid Project Picture" class="project-img">
+                        </div>
+                        <h2 id="projectsTitle5" class="skill-sub-title project-title"></h2>
+                    </div>
                 </div>
             </div>
             <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
@@ -240,14 +252,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2 id="projectsTitle4"></h2>
+                    <h2 id="projectsTitle10"></h2>
                     <p class="modal-sub">C#, Unity</p>
                 </div>
                 <div class="modal-img-container">
                     <img src="./assets/pictures/City_Panorama.png" alt="City Generator Project Picture" class="modal-img">
                 </div>
-                <p id="projectsTxt1" class="modal__text__p"></p>
-                <p id="projectsTxt2" class="modal__text__p" style="padding-top: 0;"></p>
+                <p id="projectsTxtCity1" class="modal__text__p"></p>
+                <p id="projectsTxtCity2" class="modal__text__p" style="padding-top: 0;"></p>
                 <div class="modal-img-container more-imgs" style="padding-bottom: 20px;">
                     <img src="./assets/pictures/DistortedVoronoi.png" alt="Modified Voronoi Picture" class="modal-img">
                     <img src="./assets/pictures/City_Roads.png" alt="City Roads Picture" class="modal-img">
@@ -264,14 +276,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2 id="projectsTitle5"></h2>
+                    <h2 id="projectsTitle20"></h2>
                     <p class="modal-sub">C#, Unity</p>
                 </div>
                 <div class="modal-img-container">
                     <img src="./assets/pictures/Craftorio_Gameplay.png" alt="Gameplay Picture" class="modal-img">
                 </div>
-                <p id="projectsTxt3" class="modal__text__p"></p>
-                <p id="projectsTxt4" class="modal__text__p" style="padding-top: 0;"></p>
+                <p id="projectsTxtWorld1" class="modal__text__p"></p>
+                <p id="projectsTxtWorld2" class="modal__text__p" style="padding-top: 0;"></p>
                 <div class="modal-img-container more-imgs">
                     <img src="./assets/pictures/Insel_mit_biomen.png" alt="Overworld Picture" class="modal-img">
                     <img src="./assets/pictures/Biomgeneration.png" alt="Temperatur Perlin Noise Picture" class="modal-img">
@@ -283,16 +295,67 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2 id="projectsTitle6"></h2>
+                    <h2 id="projectsTitle30"></h2>
                     <p class="modal-sub">JavaScript, Vue.js, HTML, CSS</p>
                 </div>
                 <div class="modal-img-container">
                     <img src="./assets/pictures/Dialogue-forge-home.png" alt="Dialogue Generator Homepage Picture" class="modal-img">
                 </div>
-                <p id="projectsTxt5" class="modal__text__p"></p>
+                <p id="projectsTxtDialogue1" class="modal__text__p"></p>
                 <div class="modal-img-container more-imgs">
                     <img src="./assets/pictures/Dialogue-forge-edit.png" alt="Dialogue Edit Picture" class="modal-img">
                     <img src="./assets/pictures/Dialogue-forge-persona.png" alt="Persona Picture" class="modal-img">
+                </div>
+            </div>
+        </div>
+
+        <div id="shooterGameModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 id="projectsTitle40"></h2>
+                    <p class="modal-sub">C#, Unity</p>
+                </div>
+                <div class="modal-img-container">
+                    <!-- <video controls alt="First Person Shooter Game Video" class="modal-img"> 
+                        <source src="./assets/videos/FPS_Game.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video> -->
+
+                    <iframe alt="First Person Shooter Game Video" class="modal-img" src="https://youtu.be/ruyQgcPqyyE"></iframe>
+                </div>
+                <p id="projectsTxtFPS1" class="modal__text__p"></p>
+                <p id="projectsTxtFPS2" class="modal__text__p" style="padding-top: 0;"></p>
+                <p id="projectsTxtFPS3" class="modal__text__p" style="padding-top: 0;"></p>
+                <p id="projectsTxtFPS4" class="modal__text__p" style="padding-top: 0;"></p>
+                <div class="modal-img-container more-imgs">
+                    <img src="./assets/pictures/FPS_World.png" alt="First Person Shooter World Picture" class="modal-img">
+                    <img src="./assets/pictures/FPS_Enemy.png" alt="First Person Shooter Fallen Enemy Picture" class="modal-img">
+                </div>
+            </div>
+        </div>
+
+        <div id="arkanoidModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 id="projectsTitle50"></h2>
+                    <p class="modal-sub">C#, Unity</p>
+                </div>
+                <div class="modal-img-container">
+                    <!-- <video controls alt="Arkanoid Game Video" class="modal-img">
+                        <source src="./assets/videos/Arkanoid_Video.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video> -->
+
+                    <iframe alt="Arkanoid Game Video" class="modal-img" src="https://youtu.be/IbQ6TNJGm_o"></iframe>
+                </div>
+                <p id="projectsTxtArkanoid1" class="modal__text__p"></p>
+                <p id="projectsTxtArkanoid2" class="modal__text__p" style="padding-top: 0;"></p>
+                <p id="projectsTxtArkanoid3" class="modal__text__p" style="padding-top: 0;"></p>
+                <div class="modal-img-container more-imgs">
+                    <img src="./assets/pictures/Arkanoid_Win.png" alt="Arkanoid Win Screen Picture" class="modal-img">
+                    <img src="./assets/pictures/Arkanoid_Item.png" alt="Arkanoid Increase Item Picture" class="modal-img">
                 </div>
             </div>
         </div>
